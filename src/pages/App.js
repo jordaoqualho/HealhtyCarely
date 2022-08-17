@@ -1,6 +1,6 @@
 import useTheme from "hooks/useTheme";
 import { Routes } from "pages/routes";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistor, store } from "store/store";
@@ -13,10 +13,6 @@ import light from "themes/light";
 function App() {
   const [theme, setTheme] = useTheme("theme", light);
 
-  const toggleTheme = () => {
-    setTheme(theme.title === "light" ? dark : light);
-  };
-
   useEffect(() => {
     setTheme(theme.title === "light" ? light : dark);
   }, []);
@@ -26,8 +22,8 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <AppContainer>
-            <Routes toggleTheme={toggleTheme} />
+          <AppContainer name="appContainer">
+            <Routes />
           </AppContainer>
         </ThemeProvider>
       </PersistGate>

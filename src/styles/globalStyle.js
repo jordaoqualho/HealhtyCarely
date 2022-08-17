@@ -67,7 +67,6 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     background: var(--contrast);
     border-radius: 100px;
-    
   }
 
   * {
@@ -75,19 +74,8 @@ export default createGlobalStyle`
     outline: none;
     margin: 0;
     border: none;
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px var(--background) inset;
-    transition: background-color 5000s ease-in-out 0s;
+    box-sizing: border-box; 
+    z-index: 10;    
   }
 
   .flex {
@@ -148,44 +136,5 @@ export default createGlobalStyle`
   .flex-column {
     display: flex;
     flex-direction: column;
-  }
-
-  form {
-    margin: 50px 0;
-  }
-
-  input,
-  select {
-    font-size: var(--medium);
-    font-weight: 500;
-    background-color: #fff;
-    outline: none;
-    width: 100%;
-    padding-left: 20px !important;
-    border: 1px solid transparent;
-  }
-
-  input::placeholder,
-  select::placeholder {
-    font-size: var(--large);
-    font-weight: 700;
-    color: var(--primary);
-  }
-
-  select:focus,
-  input:focus {
-    border: 1px solid var(--primary);
-  }
-  
-  h3,
-  h2 {
-    font-size: 70px;
-    font-weight: 300;
-  }
-  
-  span {
-    font-size: var(--large);
-    padding: 10px 30px;
-    font-weight: 500;
   }
 `;
