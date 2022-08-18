@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
   :root {
     /* Colors */
     --primary: ${(props) => props.theme.color.primary};
@@ -33,6 +33,7 @@ export default createGlobalStyle`
     --huge: ${(props) => props.theme.font.huge};
     --subtitle: ${(props) => props.theme.font.subtitle};
     --title: ${(props) => props.theme.font.title};
+    --super: ${(props) => props.theme.font.super};
 
     /* Shadows */
     --basicShadow: ${(props) => props.theme.shadow.basic};
@@ -53,6 +54,11 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%; 
+  }
+
+  button {
+    cursor: pointer;
+    transition: var(--fast);
   }
 
   ::-webkit-scrollbar {
@@ -136,5 +142,9 @@ export default createGlobalStyle`
   .flex-column {
     display: flex;
     flex-direction: column;
+  }
+
+  .test { 
+    border: 1px solid red;
   }
 `;

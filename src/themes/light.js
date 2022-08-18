@@ -2,7 +2,7 @@ export default {
   title: "light",
 
   font: {
-    family: "Poppins",
+    family: "Manrope",
     micro: "1rem",
     small: "1.2rem",
     medium: "1.6rem",
@@ -11,12 +11,13 @@ export default {
     huge: "3.2rem",
     subtitle: "3.8rem",
     title: "4.8rem",
+    super: "5.6rem",
   },
 
   color: {
     primary: "#4D77FF",
     secundary: "#c4bafd",
-    light: "#E8E9F2",
+    light: "#EDF1FF",
     background: "#ffffff",
     error: "#ea4335",
     warning: "#F6B817",
@@ -32,11 +33,11 @@ export default {
   text: {
     basic: "#ffffff",
     contrast: "#262626",
-    bright: "#bbbbbb",
+    bright: "#696969",
   },
 
   shadow: {
-    basic: "0px 5px 5px rgb(0 0 0 / 5%)",
+    basic: "0px 10px 40px rgba(18, 18, 18, 0.1)",
     dark: "0px 5px 5px rgb(0 0 0 / 10%)",
     normal: "2px 2px 10px 5px rgb(0 0 0 / 5%)",
   },

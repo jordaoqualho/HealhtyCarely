@@ -14,6 +14,7 @@ declare module "styled-components" {
       huge: string;
       subtitle: string;
       title: string;
+      super: string;
     };
 
     color: {
