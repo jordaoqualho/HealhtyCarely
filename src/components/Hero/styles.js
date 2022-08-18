@@ -79,6 +79,7 @@ export const Modal = styled.div`
 
   h4 {
     font-size: var(--medium);
+    margin-top: 10px;
   }
 
   p {

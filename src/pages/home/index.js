@@ -1,4 +1,5 @@
 import Hero from "components/Hero";
+import Solutions from "components/Solutions";
 import { Container } from "./styles";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Container name="container">
         <Hero name="hero" />
+        <Solutions name="solutions" />
       </Container>
     </>
   );
