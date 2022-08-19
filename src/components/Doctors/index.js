@@ -10,7 +10,7 @@ const Doctors = () => {
             <h4>Find Doctor</h4>
             <h1>Find the right doctor according to your complaint</h1>
             <p>
-              HealthCare.ly is a free, health app that goes beyond matching you
+              HealthCarely is a free, health app that goes beyond matching you
               with doctors. It actively helps you find the right doctor based on
               your medical and personal needs and connects you with your
               HealthCarely community for ongoing support throughout your journey

@@ -4,6 +4,7 @@ export const Container = styled.div`
   background-color: var(--background);
   position: relative;
   width: 100%;
+  overflow: hidden;
   min-height: 670px;
 `;
 
@@ -37,6 +38,7 @@ export const Info = styled.div`
     font-size: var(--medium);
     font-weight: bold;
     color: var(--primary);
+    margin-bottom: 10px;
   }
 
   h1 {
