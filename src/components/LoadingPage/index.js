@@ -7,8 +7,11 @@ const LoadingPage = () => {
 
   useEffect(() => {
     if (progress >= 100) {
-      return setTimeout(() => {
+      setTimeout(() => {
         container.current.style.opacity = "0";
+      }, 600);
+      return setTimeout(() => {
+        container.current.style.top = "-150%";
       }, 1000);
     }
 

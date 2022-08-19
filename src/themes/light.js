@@ -4,10 +4,10 @@ export default {
   font: {
     family: "Manrope",
     micro: "1rem",
-    small: "1.2rem",
+    small: "1.4rem",
     medium: "1.6rem",
     large: "1.8rem",
-    big: "2.4rem",
+    big: "2.8rem",
     huge: "3.2rem",
     subtitle: "3.8rem",
     title: "4.8rem",

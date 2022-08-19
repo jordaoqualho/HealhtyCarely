@@ -67,11 +67,11 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--light);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: var(--bright);
+    background: var(--primary);
   }
 
   * {
