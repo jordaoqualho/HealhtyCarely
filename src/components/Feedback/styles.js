@@ -83,14 +83,14 @@ export const Coment = styled.div`
       transition: all 0.3s;
 
       :hover {
-        opacity: 0.3;
+        opacity: 0.15;
       }
     }
 
     .left {
       transform: rotate(-180deg);
       margin-right: 15px;
-      opacity: 0.3;
+      opacity: 0.15;
     }
   }
 `;

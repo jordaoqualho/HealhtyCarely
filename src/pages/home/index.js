@@ -1,5 +1,6 @@
 import Doctors from "components/Doctors";
 import Feedback from "components/Feedback";
+import Footer from "components/Footer";
 import Hero from "components/Hero";
 import LoadingPage from "components/LoadingPage";
 import Rating from "components/Rating";
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Schedule name="schedule" />
         <Rating name="rating" />
         <Feedback name="feedback" />
+        <Footer name="footer" />
       </Container>
     </>
   );
