@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   width: 1240px;
   height: 100%;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 `;
 
 export const Title = styled.div`
@@ -26,6 +26,8 @@ export const Title = styled.div`
   h1 {
     font-size: var(--huge);
     margin-bottom: 50px;
+    text-align: center;
+    width: 450px;
   }
 `;
 
@@ -41,9 +43,14 @@ export const Options = styled.div`
     border-radius: 0px 0px 10px 10px;
     border-top: 3px solid var(--primary);
 
+    h1 {
+      margin-bottom: 12px;
+      font-size: var(--huge);
+    }
+
     h4 {
       font-size: var(--medium);
-      margin: 15px 0;
+      margin-bottom: 5px;
     }
 
     p {

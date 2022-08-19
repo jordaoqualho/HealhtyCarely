@@ -1,0 +1,39 @@
+import { useEffect, useRef, useState } from "react";
+import { Container } from "./style";
+
+const LoadingPage = () => {
+  const container = useRef(null);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (progress >= 100) {
+      return setTimeout(() => {
+        container.current.style.opacity = "0";
+      }, 1000);
+    }
+
+    const timerId = setInterval(() => {
+      setProgress(progress + 5);
+    }, 50);
+
+    return () => clearInterval(timerId);
+  });
+
+  return (
+    <Container
+      name="container"
+      className="flex_ccc"
+      ref={container}
+      width={progress}
+    >
+      <div className="logo flex_cc">
+        <h1>
+          Healhty<span>Carely</span>
+        </h1>
+      </div>
+      <div className="bar" />
+    </Container>
+  );
+};
+
+export default LoadingPage;
