@@ -5,11 +5,11 @@ const Solutions = () => {
   return (
     <Container name="container">
       <Wrapper name="wrapper" className="flex_ccc">
-        <Title name="title" className="flex_ccc">
+        <Title name="title" className="flex_ccc" data-aos="fade-up">
           <p>Fast Solutions</p>
           <h1>step by step to get your solutions</h1>
         </Title>
-        <Options name="options" className="flex_cb">
+        <Options name="options" className="flex_cb" data-aos="fade-up">
           <div className="box">
             <img src={search} alt="search" />
             <h4>Check health complaints</h4>

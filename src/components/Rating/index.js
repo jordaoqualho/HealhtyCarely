@@ -4,11 +4,11 @@ const Rating = () => {
   return (
     <Container name="container">
       <Wrapper name="wrapper" className="flex_ccc">
-        <Title name="title" className="flex_ccc">
+        <Title name="title" className="flex_ccc" data-aos="fade-up">
           <p>Our Rating</p>
           <h1>We’re employee benefit at 7500+ hospital </h1>
         </Title>
-        <Options name="options" className="flex_cb">
+        <Options name="options" className="flex_cb" data-aos="fade-up">
           <div className="box flex_ccc">
             <h1>900+</h1>
             <h4>Verified Specialist</h4>

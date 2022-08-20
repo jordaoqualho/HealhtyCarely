@@ -8,7 +8,7 @@ const Hero = () => {
       <Wrapper name="wrapper">
         <Menu name="menu" />
         <Banner name="banner">
-          <Info name="info">
+          <Info name="info" data-aos="fade-up" data-aos-delay="2200">
             <h1>
               Medical Care Now Simplified For <span>Everyone</span>
             </h1>
@@ -22,7 +22,12 @@ const Hero = () => {
           </Info>
           <img src={doctor} alt="doctor" className="doctor" />
           <img src={circle} alt="circle" className="circle" />
-          <Modal name="modal" className="flex_ccc">
+          <Modal
+            name="modal"
+            className="flex_ccc"
+            data-aos="fade-up"
+            data-aos-delay="2200"
+          >
             <img src={doctor_min} alt="doctor2" />
             <h4>Dr. Shimanta</h4>
             <p>Skin Specialist</p>

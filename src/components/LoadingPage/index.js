@@ -7,6 +7,10 @@ const LoadingPage = () => {
 
   useEffect(() => {
     if (progress >= 100) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
       setTimeout(() => {
         container.current.style.opacity = "0";
       }, 600);

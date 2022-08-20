@@ -6,7 +6,7 @@ const Doctors = () => {
     <>
       <Container name="container">
         <Wrapper name="wrapper">
-          <Info name="info">
+          <Info name="info" data-aos="fade-up">
             <h4>Find Doctor</h4>
             <h1>Find the right doctor according to your complaint</h1>
             <p>
@@ -29,9 +29,14 @@ const Doctors = () => {
             </div>
             <button>See the Doctors</button>
           </Info>
-          <img src={doctor2} alt="doctor2" className="doctor" />
+          <img
+            src={doctor2}
+            alt="doctor2"
+            className="doctor"
+            data-aos="fade-up"
+          />
           <img src={circle2} alt="circle2" className="circle" />
-          <Modal name="modal">
+          <Modal name="modal" data-aos="fade-up">
             <h4>Available Doctors</h4>
             <p>Select Doctors</p>
             <div className="doctors flex_cs">

@@ -5,8 +5,8 @@ const Schedule = () => {
   return (
     <Container name="container">
       <Wrapper name="wrapper" className="flex_cs">
-        <img src={reunion} alt="reunion" />
-        <Info name="info">
+        <img src={reunion} alt="reunion" data-aos="fade-up" />
+        <Info name="info" data-aos="fade-up">
           <h4>Make a Shedule</h4>
           <h1>Make a schedule in advance with the available doctor</h1>
           <p>

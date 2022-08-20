@@ -5,11 +5,11 @@ const Feedback = () => {
   return (
     <Container name="container">
       <Wrapper name="wrapper" className="flex_ccc">
-        <Title name="title">
+        <Title name="title" data-aos="fade-up">
           <h1>Our patients feedback about us</h1>
           <p>their impression after using this application</p>
         </Title>
-        <Depoiment name="depoiment" className="flex_cb">
+        <Depoiment name="depoiment" className="flex_cb" data-aos="fade-up">
           <img src={client} alt="client" />
           <div className="background" />
           <Coment name="coment">
