@@ -15,6 +15,7 @@ import star from "./svg/star.svg";
 import calendar from "./svg/calendar.svg";
 import check from "./svg/check.svg";
 import arrow from "./svg/arrow.svg";
+import arrow_blue from "./svg/arrow_blue.svg";
 import twitter from "./svg/twitter.svg";
 import instagram from "./svg/instagram.svg";
 import facebook from "./svg/facebook.svg";
@@ -34,6 +35,7 @@ export {
   calendar,
   check,
   arrow,
+  arrow_blue,
   twitter,
   instagram,
   facebook,

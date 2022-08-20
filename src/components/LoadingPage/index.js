@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Container } from "./style";
+import { Container } from "./styles";
 
 const LoadingPage = () => {
   const container = useRef(null);
@@ -8,8 +8,8 @@ const LoadingPage = () => {
   useEffect(() => {
     if (progress >= 100) {
       window.scrollTo({
-        top: 0,
         behavior: "smooth",
+        top: 0,
       });
       setTimeout(() => {
         container.current.style.opacity = "0";
