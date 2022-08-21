@@ -1,8 +1,8 @@
 import { Container, Options, Title, Wrapper } from "./styles";
 
-const Rating = () => {
+const Rating = ({ ratingRef }) => {
   return (
-    <Container name="container">
+    <Container name="container" ref={ratingRef}>
       <Wrapper name="wrapper" className="flex_ccc">
         <Title name="title" className="flex_ccc" data-aos="fade-up">
           <p>Our Rating</p>

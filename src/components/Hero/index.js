@@ -2,11 +2,11 @@ import Menu from "components/Hero/Menu";
 import { circle, doctor, doctor_min } from "imgs";
 import { Container, Wrapper, Banner, Info, Modal } from "./styles";
 
-const Hero = () => {
+const Hero = ({ scrollTo }) => {
   return (
     <Container name="container">
       <Wrapper name="wrapper">
-        <Menu name="menu" />
+        <Menu name="menu" scrollTo={scrollTo} />
         <Banner name="banner">
           <Info name="info" data-aos="fade-up" data-aos-delay="2200">
             <h1>

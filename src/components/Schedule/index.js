@@ -1,10 +1,10 @@
 import { check, reunion } from "imgs";
 import { Container, Wrapper, Info } from "./styles";
 
-const Schedule = () => {
+const Schedule = ({ scheduleRef }) => {
   return (
     <Container name="container">
-      <Wrapper name="wrapper" className="flex_cs">
+      <Wrapper name="wrapper" className="flex_cs" ref={scheduleRef}>
         <img src={reunion} alt="reunion" data-aos="fade-up" />
         <Info name="info" data-aos="fade-up">
           <h4>Make a Shedule</h4>

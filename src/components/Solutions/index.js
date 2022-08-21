@@ -1,9 +1,9 @@
 import { calendar, search, star, user } from "imgs";
 import { Container, Wrapper, Title, Options } from "./styles";
 
-const Solutions = () => {
+const Solutions = ({ solutionRef }) => {
   return (
-    <Container name="container">
+    <Container name="container" ref={solutionRef}>
       <Wrapper name="wrapper" className="flex_ccc">
         <Title name="title" className="flex_ccc" data-aos="fade-up">
           <p>Fast Solutions</p>

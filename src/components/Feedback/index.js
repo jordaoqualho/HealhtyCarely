@@ -1,9 +1,9 @@
 import { arrow, client } from "imgs";
 import { Container, Wrapper, Title, Depoiment, Coment } from "./styles";
 
-const Feedback = () => {
+const Feedback = ({ feedbackRef }) => {
   return (
-    <Container name="container">
+    <Container name="container" ref={feedbackRef}>
       <Wrapper name="wrapper" className="flex_ccc">
         <Title name="title" data-aos="fade-up">
           <h1>Our patients feedback about us</h1>

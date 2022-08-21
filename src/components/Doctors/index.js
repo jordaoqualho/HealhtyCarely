@@ -1,10 +1,10 @@
 import { check, circle2, doctor2, doctor3_min, doctor4_min } from "imgs";
 import { Container, Info, Wrapper, Modal } from "./styles";
 
-const Doctors = () => {
+const Doctors = ({ doctorRef }) => {
   return (
     <>
-      <Container name="container">
+      <Container name="container" ref={doctorRef}>
         <Wrapper name="wrapper">
           <Info name="info" data-aos="fade-up">
             <h4>Find Doctor</h4>
